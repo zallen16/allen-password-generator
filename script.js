@@ -7,6 +7,14 @@ const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 const number = "0123456789";
 const symbol = "@#$%^&*()_+~|}{[]></-=";
 
+const allChars = upperCase + lowerCase + number + symbol;
+
+var question1 = confirm("Is this true?");
+console.log("question1", question1);
+var question2 = prompt("Type below");
+console.log("question2", question2);
+
+var question3 = prompt("")
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
