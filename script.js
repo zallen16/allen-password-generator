@@ -27,6 +27,18 @@ function generatePassword () {
     console.log("confirmNumbers", confirmNumbers);
   var confirmCharacters = confirm("Include special characters?");
     console.log("confirmCharacters", confirmCharacters);
+    if (confirmLowerCase){
+      allChars += lowerCase
+    }
+    if (confirmUpperCase){
+      allChars += upperCase
+    }
+    if (confirmNumbers){
+      allChars += number
+    }
+    if (confirmCharacters){
+      allChars += symbol
+    }
 }
 
 
