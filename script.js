@@ -11,21 +11,24 @@ const symbol = "@#$%^&*()_+~|}{[]></-=";
 function generatePassword () {
   
   var allChars = "";
-  var question1 = confirm("Is this true?");
-    console.log("question1", question1);
-  var question2 = prompt("Type anything below");
-    console.log("question2", question2);
-
-  var passwordLength = prompt("Length of password?");
-    console.log("question3", question3);  
-    if (question3) {
-        var choice = prompt;
-      }
-      if (choice == i<8 || i>128){
-        return;
-      };
-}
   
+  var passwordLength = prompt("Length of password?");
+  console.log("question3", passwordLength);  
+  
+  if (passwordLength<8 || passwordLength>128){
+    alert ("Password must be at least 8 characters and no more than 128");
+    return "Please try again";
+  };
+  var confirmLowerCase = confirm("Include lowercase letters?"); 
+    console.log("question1", confirmLowerCase);
+  var confirmUpperCase = confirm("Include uppercase letters?");
+    console.log("question2", confirmUpperCase);
+  var confirmNumbers = confirm("Include numbers?"); 
+    console.log("confirmNumbers", confirmNumbers);
+  var confirmCharacters = confirm("Include special characters?");
+    console.log("confirmCharacters", confirmCharacters);
+}
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
