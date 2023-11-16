@@ -39,6 +39,14 @@ function generatePassword () {
     if (confirmCharacters){
       allChars += symbol
     }
+    console.log(allChars)
+
+    var randomPassword = ""
+    for (var i=0; i<passwordLength; i++){
+      var randomIndex = Math.floor(Math.random() * allChars.length)
+      randomPassword += allChars.charAt(randomIndex)
+    }
+    return randomPassword;
 }
 
 
